@@ -1,0 +1,9 @@
+//MIXINS
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex__center--hv {
+  justify-content: center;
+  align-items: center;
+}
