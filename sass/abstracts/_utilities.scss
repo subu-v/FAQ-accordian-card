@@ -1,0 +1,45 @@
+//UTILITY CLASSES
+
+//GRID
+.grid {
+  display: grid;
+}
+
+.grid__col--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid__col-gap--m {
+  column-gap: 4.8rem;
+}
+
+// MARGINS
+
+.margin-bottom--xs {
+  margin-bottom: 1.2rem;
+}
+
+.margin-bottom--s {
+  margin-bottom: 1.6rem;
+}
+
+.margin-bottom--m {
+  margin-bottom: 2.4rem;
+}
+
+// HIDDEN
+.hidden {
+  display: none;
+}
+
+.rotate--180deg {
+  transform: rotate(180deg);
+}
+
+.color__blue--desaturated {
+  color: $color__desatured-blue--very-dark;
+}
+
+.fw--700 {
+  font-weight: $fw--700;
+}
