@@ -1,13 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-@mixin flex {
-  display: flex;
-}
-
-@mixin flex__center--hv {
-  justify-content: center;
-  align-items: center;
-}
+@import "abstracts/_mixins.scss";
+@import "abstracts/_variables.scss";
 
 * {
   margin: 0;
@@ -20,10 +14,60 @@ html {
 }
 
 body {
+  background-image: linear-gradient(
+    to bottom,
+    $color__violet--soft,
+    $color__blue--soft
+  );
+
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.2rem;
-  max-height: 100vh;
+  min-height: 100vh;
 
   @include flex;
   @include flex__center--hv;
 }
+
+.container {
+  max-width: 95rem;
+  margin: 0 auto;
+}
+
+.heading-primary {
+  color: $color__desatured-blue--very-dark;
+  font-size: 3rem;
+  font-weight: $fw--700;
+}
+
+.faq {
+  background-color: $color__white;
+  border-radius: 20px;
+
+  &__accordian {
+    padding: 6.4rem 6.4rem 6.4rem 0;
+  }
+  &__question-box {
+    border-bottom: 1px solid $color__greyish-blue--light;
+  }
+
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.4rem;
+    font-size: 1.4rem;
+    color: $color__greyish-blue--very-dark;
+  }
+
+  &__answer {
+    color: $color__greyish-blue--dark;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .show-answer {
+    height: 100%;
+  }
+}
+
+@import "abstracts/_utilities.scss";
