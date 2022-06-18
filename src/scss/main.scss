@@ -23,6 +23,8 @@ body {
   font-size: 1.2rem;
   min-height: 100vh;
 
+  position: relative;
+
   @include flex;
   @include flex__center--hv;
 }
@@ -42,9 +44,30 @@ body {
   background-color: $color__white;
   border-radius: 20px;
 
+  &__image-box-1 {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image-1 {
+    position: absolute;
+    left: -17.5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__image-box-2 {
+    position: absolute;
+    left: 13%;
+    top: 56%;
+    transform: translateY(-50%);
+  }
+
   &__accordian {
+    grid-column-start: 2;
     padding: 6.4rem 6.4rem 6.4rem 0;
   }
+
   &__question-box {
     border-bottom: 1px solid $color__greyish-blue--light;
   }
