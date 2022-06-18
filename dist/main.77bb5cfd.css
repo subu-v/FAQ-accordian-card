@@ -8,7 +8,7 @@
 }
 
 .grid__col-gap--m {
-  column-gap: 4.8rem;
+  column-gap: 3.2rem;
 }
 
 .margin-bottom--xs {
@@ -54,6 +54,7 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.2rem;
   min-height: 100vh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,8 +74,29 @@ body {
 .faq {
   background-color: #fff;
   border-radius: 20px;
+  background-image: url(/bg-pattern-desktop.dd16bb75.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -55rem -31rem;
+}
+.faq__image-box-1 {
+  position: relative;
+  overflow: hidden;
+}
+.faq__image-1 {
+  position: absolute;
+  left: -17.5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.faq__image-box-2 {
+  position: absolute;
+  left: 13%;
+  top: 56%;
+  transform: translateY(-50%);
 }
 .faq__accordian {
+  grid-column-start: 2;
   padding: 6.4rem 6.4rem 6.4rem 0;
 }
 .faq__question-box {
