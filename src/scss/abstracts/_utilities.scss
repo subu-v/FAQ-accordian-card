@@ -1,19 +1,6 @@
 @use "variables" as *;
 //UTILITY CLASSES
 
-//GRID
-.grid {
-  display: grid;
-}
-
-.grid__col--2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid__col-gap--m {
-  column-gap: 3.2rem;
-}
-
 // MARGINS
 
 .margin-bottom--xs {

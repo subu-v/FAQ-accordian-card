@@ -1,5 +1,4 @@
 @use "abstracts" as *;
-
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 * {
@@ -34,6 +33,11 @@ body {
   margin: 0 auto;
 }
 
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+}
 .heading-primary {
   color: $color__desatured-blue--very-dark;
   font-size: 3rem;
@@ -93,5 +97,57 @@ body {
 
   .show-answer {
     height: 100%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .container {
+    max-width: 30rem;
+  }
+
+  .heading-primary {
+    text-align: center;
+  }
+
+  .faq {
+    background-image: none;
+    padding: 2.4rem;
+
+    &__image-box-1 {
+      overflow: visible;
+    }
+
+    &__image-1 {
+      top: -45px;
+      left: 10%;
+    }
+
+    &__image--1 {
+      width: 90%;
+    }
+
+    &__image--2 {
+      width: 50%;
+    }
+
+    &__image-box-2 {
+      top: 18%;
+      left: 18%;
+    }
+
+    &__accordian {
+      grid-column-start: 1;
+      padding: 12rem 0 2.4rem 0;
+    }
+
+    &__answer {
+      font-size: 1.3rem;
+      padding-right: 3.2rem;
+    }
   }
 }
