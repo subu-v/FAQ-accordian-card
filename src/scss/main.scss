@@ -43,6 +43,10 @@ body {
 .faq {
   background-color: $color__white;
   border-radius: 20px;
+  background-image: url(../../images/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -55rem -31rem;
 
   &__image-box-1 {
     position: relative;
